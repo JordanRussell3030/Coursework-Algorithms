@@ -29,8 +29,10 @@ def combine_username_password(usernames, passwords):
     ucount = 0
     pcount = 0
     for username in usernames:
-        login = usernames[ucount] + passwords[pcount]
-        logins.append(login)
+        login_user = usernames[ucount]
+        login_pass = passwords[pcount]
+        logins.append(login_user)
+        logins.append(login_pass)
         ucount += 1
         pcount += 1
     return logins
